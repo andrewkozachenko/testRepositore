@@ -27,3 +27,15 @@ $("input").val("new value");
 
 
 $("p").css("color", "red").css("background", "yellow").css("font-size", "22px");
+
+
+
+$.ajax({
+  url: "/myHomePage.html", 
+  success: function(response) {
+    alert(response); 
+  }, 
+  error: function(xhr) { 
+    alert(Error! Status: + xhr.status);   
+  } 
+}); 
