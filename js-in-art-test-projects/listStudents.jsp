@@ -9,7 +9,8 @@
 [ info="text" ]
 [ errorPage="relativeURL" ] 
 [ contentType="mimeType [ ;charset=characterSet ]" | "text/html ; charset=ISO-8859-1"] 
-[pageEncoding=“charset” ][ isErrorPage="true | false" ] 
+[pageEncoding=“charset” ]
+[ isErrorPage="true | false" ] 
 %>
 
 
