@@ -78,7 +78,14 @@
 </table>
 
 
+  <c:set var="userLevel" scope="session" value="Cowboy"/>
 
+  <c:set var="userLevel" scope="request">
+    Sheriff, Bartnder, Cowgirl
+  </c:set>
+  
+  <c:get var="userLevel" scope="page"/>
+  
 
 
 
