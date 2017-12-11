@@ -88,6 +88,40 @@
   
 
 
+<% -- firstPage.jsp --%>
 
- 
+<%@ page contentType="text/html" %>
+<%@ taglib prefix="my" tagdir="/WEB-INF/tags/myCustomTags" %>
+<html>
+	<body bgcolor="white">
+		Random Number : <my:generateRandomNum />
+	</body>
+</html>
+  
+<% -- generateRandomNum.tag --%>
+<%@ tag body-content="empty" %>
+<%
+	out.println(java.lang.Math.random());
+%>
+  
+  
+<% -- secondPage.jsp--%>
+
+<%@ page contentType="text/html" %>
+<%@ taglib prefix="my" tagdir="/WEB-INF/tags/myCustomTags" %>
+<html>
+	<body bgcolor="white">
+		Sum of two numbers : <my:addNumbers firstNum="10" secondNum="20" />
+	</body>
+</html>
+  
+  
+<% --addNumbers.tag--%>
+
+<%@ tag body-content="empty" %>
+<%@ attribute name="firstNum" required="true"%>
+<%@ attribute name="secondNum" required="true"%>
+
+${firstNum + secondNum}  
+  
  
