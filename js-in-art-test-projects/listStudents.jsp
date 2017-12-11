@@ -62,5 +62,25 @@
     </ul>
   </body>
 </html>
+
+
+
+
+<table>
+  <c:forEach var="item" items="${model.students}" varStatus="studentsCount">
+    <tr>
+      <td> Numver: ${studentsCount.count} </td
+    </tr>
+    <tr>
+      <td>${item.surname} ${item.name}</td>
+    </tr>        
+  </c:forEach>
+</table>
+
+
+
+
+
+
  
  
