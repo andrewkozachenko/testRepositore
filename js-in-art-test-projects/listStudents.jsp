@@ -38,3 +38,29 @@
   </ul>
 </body>
 </html>
+
+
+
+
+
+
+
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+<html><head>
+<meta http-equiv="Content-Type"content="text/html;charset=UTF-8"> 
+</head>
+  <body>
+    <h1>Студенти КПІ</h1>
+    <h1>Список студентів</h1>
+    <jsp:useBean id="model" class="students.model.StudentModel" />
+    <ul>
+      <c:forEach var="item" items="${model.students}">
+        <li>${item.surname} ${item.name}</li>
+      </c:forEach>
+    </ul>
+  </body>
+</html>
+ 
+ 
